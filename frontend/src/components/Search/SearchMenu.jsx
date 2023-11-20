@@ -7,6 +7,7 @@ import classes from "./SearchBar.module.css";
 import PostItem from "../PostItem/PostItem";
 
 const SearchMenu = () => {
+  const isLoggedIn = useSelector((state) => state.login.isLogged);
   const [searchValue, setSearchValue] = useState("");
   const [searchPost, setSearchPost] = useState([]);
 
@@ -42,7 +43,7 @@ const SearchMenu = () => {
       {searchPost.map((post) => {
         return (
           <Link to={`/${post.id}`} key={post.id}>
-            <PostItem title={post.title} id={post.id} />
+            <PostItem isLoggedin={isLoggedIn} title={post.title} id={post.id} />
           </Link>
         );
       })}
