@@ -1,0 +1,35 @@
+.post {
+  /* 여기에 필요한 스타일 추가 */
+
+  width: 100%;
+  padding: 16px;
+
+  flex-direction: column;
+
+  margin: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  background: white;
+}
+
+.item {
+  width: 90%;
+  display: inline-block;
+  margin-bottom: 40px; /* 포스트 사이의 마진 */
+  padding-bottom: 20px; /* 포스트 하단의 패딩 */
+  font-size: 24px; /* 큰 제목 글꼴 */
+  color: #333; /* 제목 글자 색상 */
+  margin-bottom: 10px; /* 제목 아래 마진 */
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  color: #ccc;
+  font-size: 20px;
+}
+.btn:hover {
+  background-color: #ccc;
+  color: black;
+  border-radius: 5px;
+}

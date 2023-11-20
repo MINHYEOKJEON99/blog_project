@@ -1,0 +1,20 @@
+.floating_action_button {
+  background-color: white; /* Blue background */
+  border: none; /* Remove border */
+  color: white; /* White text */
+  padding: 16px; /* Padding */
+  font-size: 30px; /* Font size */
+  line-height: 0.8; /* Line height */
+  border-radius: 30%; /* Circular button */
+  position: fixed; /* Fixed position */
+  bottom: 70px; /* 30px from the bottom */
+  right: 50px; /* 30px from the right */
+  z-index: 1; /* Make sure it's above other items */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 2px 2px 3px #999; /* Simple shadow */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.floating_action_button:hover {
+  background-color: #ccc; /* Darker blue on hover */
+}

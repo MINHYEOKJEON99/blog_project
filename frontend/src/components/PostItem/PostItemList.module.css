@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 600px;
+  max-width: 800px; /* 적당한 최대 너비 */
+  margin: 50px auto; /* 중앙 정렬 */
+  background: #fff; /* 포스트 리스트 배경색 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  padding: 20px; /* 포스트 리스트 내부 여백 */
+  border-radius: 8px; /* 모서리 둥글게 */
+}

@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "RIDIBatang";
+  src: url("../src/fonts/ridibatang.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "RIDIBatang";
+  color: #333; /* 어두운 글자 색상으로 가독성을 높임 */
+  background: #f8f8f8; /* 옅은 배경 색상 */
+  line-height: 1.6; /* 줄 간격 */
+  padding: 20px; /* 전체 페이지의 패딩 */
+}

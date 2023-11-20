@@ -1,0 +1,25 @@
+.list {
+  margin: 0;
+  padding-top: 10px;
+  list-style: none; /*글머리 기호를 제거해준다 */
+  text-align: right;
+}
+
+.list__item {
+  display: inline-block;
+  margin: 0px 16px;
+  font-size: 20px;
+}
+
+.list__item a {
+  text-decoration: none;
+  color: var(--color-primary-400);
+  font-weight: bold;
+  padding: 3px 0px;
+}
+
+.list__item a:hover,
+.list__item a:active {
+  color: #ccc;
+  cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.name {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+
+.comment {
+  margin: 0px;
+  margin-left: 5px;
+  min-width: 700px;
+}
+.comment_box {
+  display: inline-block;
+}
+.delete {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.delete:hover {
+  background-color: #ccc;
+  border: none;
+  border-radius: 10px;
+}
