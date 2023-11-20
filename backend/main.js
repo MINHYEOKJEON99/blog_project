@@ -13,13 +13,23 @@ app.listen(8080, () => {
   console.log("연결되었습니다.");
 });
 
+//docker에서 사용할땐 이 부분을 사용해야합니다
 const pool = mysql.createPool({
-  host: "localhost",
-  user: "root",
-  password: "",
+  host: "mysql",
+  user: "express-mysql",
+  password: "123456",
   database: "postData",
   connectionLimit: 10,
 });
+
+//윈도우에서 그냥 실행할땐 이부분을 사용해야합니다.
+// const pool = mysql.createPool({
+//   host: "localhost",
+//   user: "root",
+//   password: "",
+//   database: "postData",
+//   connectionLimit: 10,
+// });
 
 app.get("/posts", (req, res) => {
   pool.getConnection((err, conn) => {
